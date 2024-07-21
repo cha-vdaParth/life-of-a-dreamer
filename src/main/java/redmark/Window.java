@@ -16,8 +16,8 @@ public class Window {
     private static Window window = null;
 
     private Window() {
-        this.height = 1920;
-        this.width = 1080;
+        this.height = 1080;
+        this.width = 1920;
         this.title = "The Life Of A Dreamer";
     }
 
@@ -98,7 +98,7 @@ public class Window {
             //Poll Events
             glfwPollEvents();
 
-            glClearColor(1.0F, 0.0F, 0.0F, 1.0F);
+            glClearColor(1.0F, 1.0F, 1.0F, 1.0F);
             glClear(GL_COLOR_BUFFER_BIT);
 
             glfwSwapBuffers(glfwWindow);
